@@ -2,18 +2,32 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [showText, setShowText] = useState(true);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <div> {count} </div>
       <button
         onClick={() => {
-          setShowText(!showText);
+          setCount(count + 1);
         }}
       >
-        Show / hide
+        increase
       </button>
-      {showText === true && <h1>hi my name is jhfk</h1>}
+      <button
+        onClick={() => {
+          setCount(count - 1);
+        }}
+      >
+        decrease
+      </button>
+      <button
+        onClick={() => {
+          setCount(0);
+        }}
+      >
+        set to 0
+      </button>
     </div>
   );
 }
