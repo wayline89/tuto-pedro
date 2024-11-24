@@ -1,0 +1,69 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Optional for better contrast */
+    margin: 0;
+  }
+  
+  .addTask {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .addTask input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .addTask button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .addTask button:hover {
+    background-color: #0056b3;
+  }
+  
+  .List {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .List div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .List h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .List button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .List button:hover {
+    background-color: #a71d2a;
+  }
+  
